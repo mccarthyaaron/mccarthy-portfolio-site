@@ -2,10 +2,8 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faM } from "@fortawesome/free-solid-svg-icons";
 
-const Header = ({ myWorkRef }) => {
-  const scrollToMyWork = () => {
-    myWorkRef.current.scrollIntoView({ behavior:'smooth'})
-  }
+const Header = () => {
+  
   return (
     <header>
       <div>
@@ -14,7 +12,7 @@ const Header = ({ myWorkRef }) => {
           <ul>
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/about'>About</Link></li>
-            <li><Link to='/#work' onClick={scrollToMyWork}>My Work</Link></li>
+            <li><Link to='/work'>My Work</Link></li>
             <li><Link to='/contact'>Contact Me</Link></li>
           </ul>
         </nav>

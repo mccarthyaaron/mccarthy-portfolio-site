@@ -1,4 +1,5 @@
 @use 'config';
+@use 'about';
 
 * {
     padding: 0;
@@ -7,41 +8,76 @@
 }
   
 body {
-    font-family: 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-      color: config.$primaryColor;
-      background-color: lighten(config.$secondaryColor, 10%);
-    }
+    font-family: config.$mainFont;
+    color: config.$primaryColor;
+    background-color: lighten(config.$secondaryColor, 10%);
+    line-height: 1.5rem;
+}
 
 header {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    font-family: config.$minorFont;
+    font-size: 18px;
+    
     div {
         margin: 0 10px 0 10px;
         padding: 10px;
-        
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     nav {
-
         ul {
             display: flex;
             list-style-type: none;
-    
             li {
                 margin-right: 20px;
                 a {
                     text-decoration: none;
-                    color: config.$primaryColor;
+                    color: darken(config.$primaryColor,0%);
                 }
             }
-                
         }
     }
+}
 
+main {
+    color: config.$tertiaryColor;
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 40px;
+        .intro {
+            font-family: config.$minorFont;
+            font-size: 1.5rem;
+            // color: darken(config.$primaryColor,30%)
+        }
+        .name{
+            color: config.$primaryColor;
+            font-size: 3rem;
+
+        }
+        .title{
+            // color:config.$tertiaryColor;
+            font-size:3rem;
+        }
+        .description{
+            margin-top: 15px;
+            line-height: 1.5rem;
+            font-size: 18px;
+        }
+        .icons{
+            margin-top: 20px;
+            a svg{
+                width: 45px;
+                height: 45px;
+                margin-right: 30px;
+                color: white;
+                // padding: 10px;
+            }
+        }
+
+        @include about.aboutPage-styles;
+    }
 }
     
     

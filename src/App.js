@@ -5,17 +5,16 @@ import Contact from './components/Contact';
 import Work from './components/Work';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { useRef } from 'react';
+
 
 function App() {
-  const myWorkRef = useRef(null);
-
+  
   return (
     <>
-    <Header myWorkRef={myWorkRef} />
+    <Header />
 
     <Routes>
-      <Route path='/' element={<Home myWorkRef={myWorkRef}/>}></Route>
+      <Route path='/' element={<Home />}></Route>
       <Route path='/about' element={<About />}></Route>
       <Route path='/contact' element={<Contact />}></Route>
       <Route path='/work' element={<Work />}></Route>
