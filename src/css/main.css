@@ -6,6 +6,27 @@
 
 body {
   font-family: "Droid Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  background-color: #1a1a1a;
+}
+
+header div {
+  margin: 0 10px 0 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+header nav ul li {
+  margin-right: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

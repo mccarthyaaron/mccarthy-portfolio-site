@@ -1,3 +1,5 @@
+@use 'config';
+
 * {
     padding: 0;
     margin: 0;
@@ -7,4 +9,42 @@
 body {
     font-family: 'Droid Sans', 'Helvetica Neue',
       sans-serif;
+      color: config.$primaryColor;
+      background-color: lighten(config.$secondaryColor, 10%);
+    }
+
+header {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    div {
+        margin: 0 10px 0 10px;
+        padding: 10px;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav {
+
+        ul {
+            display: flex;
+            list-style-type: none;
+    
+            li {
+                margin-right: 20px;
+                a {
+                    text-decoration: none;
+                    color: config.$primaryColor;
+                }
+            }
+                
+        }
+    }
+
 }
+    
+    
+
+
+
