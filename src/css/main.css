@@ -45,16 +45,22 @@ main .container {
 main .container .intro {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 main .container .name {
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
 }
 main .container .title {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+main .container .title span {
+  color: white;
 }
 main .container .description {
-  margin-top: 15px;
+  margin-top: 25px;
   line-height: 1.5rem;
   font-size: 18px;
 }
@@ -73,40 +79,112 @@ main .container .introduction p {
 }
 main .container #jobs {
   display: flex;
+  flex-direction: column;
 }
 main .container #jobs #work-places {
   display: flex;
-  flex-direction: column;
-  margin-right: 30px;
-  padding: 20px;
-  height: 160px;
-  overflow-y: scroll;
-  direction: rtl;
-}
-main .container #jobs #work-places::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-main .container #jobs #work-places::-webkit-scrollbar-thumb {
-  background-color: white;
-  border-radius: 20px;
-}
-main .container #jobs #work-places::-webkit-scrollbar-track {
-  background-color: #010305;
+  align-self: center;
+  margin-bottom: 20px;
 }
 main .container #jobs #work-places button {
-  margin-bottom: 10px;
-  padding: 10px;
+  padding: 15px;
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight: 700;
   border: none;
+  border-radius: 10px;
   color: #b3b3b3;
   background: none;
+  transition: all 0.5s ease-out;
 }
 main .container #jobs #work-places button:hover {
-  background-color: white;
+  background-color: #132f59;
+  color: aqua;
+  font-size: 20px;
+  z-index: 3;
 }
 main .container #jobs #job-details {
   display: flex;
   flex-direction: column;
+}
+main .container #jobs #job-details ul {
+  margin-left: 50px;
+}
+main .container #jobs #job-details .job {
+  margin-bottom: 25px;
+}
+main .container .intro-p {
+  margin: 10px 0px 10px 0px;
+}
+main .container .projects {
+  display: flex;
+}
+main .container .projects .project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  margin: 10px 10px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+main .container .projects .project .icons-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+main .container .projects .project .icons-links a {
+  color: white;
+  font-size: 20px;
+}
+main .container .projects .project .icons-links a svg {
+  background: none;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+}
+main .container .projects .project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+main .container .contact {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+main .container .contact h3 {
+  font-weight: 900;
+}
+
+@media screen and (max-width: 501px) {
+  main .container .title span {
+    display: block;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  main .container .projects {
+    display: grid;
+    grid-template-areas: "job1 job2" "job3 job3";
+  }
+  main .container .projects .project.one {
+    grid-area: "job1";
+  }
+  main .container .projects .project.two {
+    grid-area: "job2";
+  }
+  main .container .projects .project.three {
+    grid-area: "job3";
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

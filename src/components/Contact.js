@@ -2,10 +2,19 @@
 
 const Contact = () => {
   return (
-    <div>
-      <p>You can email me at <span>mccarthymutebi@gmail.com</span> </p>
+    <main>
+      <div class='container'>
+        <div className="contact">
+        <p>You can email me at:</p><br />
+        <h3>mccarthymutebi@gmail.com</h3>
+
+        </div>
+      
       
     </div>
+
+    </main>
+    
   )
 }
 

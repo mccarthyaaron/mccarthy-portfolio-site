@@ -1,0 +1,61 @@
+@use 'config';
+
+@mixin mediaSm {
+    @media screen and (max-width: 501px) {
+        main {
+            .container {
+                .title {
+                    span {
+                        display: block;
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+        // .projects {
+        //     flex-direction: column;
+        // }
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        .projects {
+            flex-direction: column;
+        }
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        main {
+            .container {
+                .projects {
+                    display: grid;
+                    grid-template-areas:
+                    "job1 job2"
+                    "job3 job3";
+                    .project {
+                        &.one {
+                            grid-area: 'job1';
+                        }
+                        &.two {
+                            grid-area: 'job2';
+                        }
+                        &.three {
+                            grid-area: 'job3';
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+        
+        
+    }
+}

@@ -1,6 +1,15 @@
 import { Link } from 'react-router-dom';
 
-const About = ({}) => {
+const About = ({openMRSRef,openAIRef,googleRef}) => {
+  const scrollToOpenMrs = () => {
+    openMRSRef.current.scrollIntoView({ behavior:'smooth' })
+  }
+  const scrollToOpenAI = () => {
+    openAIRef.current.scrollIntoView({ behavior:'smooth' })
+  }
+  const scrollToGoogle = () => {
+    googleRef.current.scrollIntoView({ behavior:'smooth' })
+  }
   return (
     <main>
       <div className='container'>
@@ -14,15 +23,16 @@ const About = ({}) => {
 
         <div id='jobs'>
           <div id='work-places'>
-            <button>OpenMRS</button>
-            <button>Google</button>
-            <button>OpenAI</button>
+            <button onClick={scrollToOpenMrs}>OpenMRS</button>
+            <button onClick={scrollToGoogle}>Google</button>
+            <button onClick={scrollToOpenAI}>OpenAI</button>
           </div>
           <div id='job-details'>
-            <div class='job' id="openMRS">
-              <h3>Front End Developer</h3>
-              <p>June 2023 - December 2025</p>
-              <h4>Key Roles and Responsibilities</h4>
+            <div class='job' ref={openMRSRef} id="openMRS">
+              <h3>OpenMRS</h3>
+              <h4>Postion: Front End Developer(June 2023 - December 2025)</h4>
+              
+              <h5>Key Roles and Responsibilities</h5>
               <ul>
                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, corrupti.
                 </li>
@@ -32,10 +42,10 @@ const About = ({}) => {
                 </li>
               </ul>
             </div>
-            <div class='job' id="google">
-              <h3>FullStack Developer</h3>
-              <p>January 2026 - November 2028</p>
-              <h4>Key Roles and Responsibilities</h4>
+            <div class='job' ref={googleRef} id="google">
+              <h3>Google</h3>
+              <h4>FullStack Developer(January 2026 - November 2028)</h4>
+              <h5>Key Roles and Responsibilities</h5>
               <ul>
                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, corrupti.
                 </li>
@@ -46,10 +56,10 @@ const About = ({}) => {
               </ul>
 
             </div>
-            <div class='job' id="openAI">
-              <h3>Machine Learning Consultant</h3>
-              <p>February 2029 - Marchecember 2035</p>
-              <h4>Key Roles and Responsibilities</h4>
+            <div class='job' ref={openAIRef} id="openAI">
+              <h3>OpenAI</h3>
+              <h4>Machine Learning Consultant(February 2029 - Marchecember 2035)</h4>
+              <h5>Key Roles and Responsibilities</h5>
               <ul>
                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, corrupti.
                 </li>
