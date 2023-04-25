@@ -2,6 +2,7 @@
 @use 'about';
 @use 'work';
 @use 'media';
+@use 'header';
 
 * {
     padding: 0;
@@ -16,43 +17,19 @@ body {
     line-height: 1.5rem;
 }
 
-header {
-    font-family: config.$minorFont;
-    font-size: 18px;
-    
-    div {
-        margin: 0 10px 0 10px;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    nav {
-        ul {
-            display: flex;
-            list-style-type: none;
-            li {
-                margin-right: 20px;
-                a {
-                    text-decoration: none;
-                    color: darken(config.$primaryColor,0%);
-                }
-            }
-        }
-    }
-}
+@include header.headerStyles;
 
 main {
     color: config.$tertiaryColor;
     .container {
         max-width: 960px;
-        margin: 0 auto;
+        margin: 30px auto;
         padding: 40px;
         .intro {
             font-family: config.$minorFont;
             font-size: 1.5rem;
             margin-bottom: 20px;
-            // color: darken(config.$primaryColor,30%)
+            color: aqua;
         }
         .name{
             color: config.$primaryColor;

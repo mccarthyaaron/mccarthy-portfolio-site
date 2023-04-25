@@ -12,9 +12,28 @@
                 }
             }
         }
-        // .projects {
-        //     flex-direction: column;
-        // }
+        header {
+            .normal-nav {
+                display: none;
+            }
+            .hamburger-menu {
+                .menu-icon {
+                    visibility: visible;
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    .btn-line {
+                        width: 30px;
+                        height: 3px;
+                        margin-bottom: 5px;
+                        background-color: rgb(247, 242, 242);
+                    }
+                }
+    
+            }
+
+        }
+        
     }
 }
 
