@@ -1,10 +1,7 @@
 import {AiFillGithub, AiFillTwitterCircle} from 'react-icons/ai'
 import {Link} from 'react-router-dom';
-import About from './About';
-import { useRef } from 'react';
 
 const Home = ({}) => {
-  
   return (
     <main>
       <div className='container'>
@@ -21,13 +18,9 @@ const Home = ({}) => {
           <Link>
             <AiFillTwitterCircle />
           </Link>
-         
-
         </div>
       </div>
-    
     </main>
-    
   )
 }
 

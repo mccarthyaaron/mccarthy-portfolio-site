@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom';
 
-const About = ({openMRSRef,openAIRef,googleRef}) => {
+const Experience = ({openMRSRef,openAIRef,googleRef}) => {
   const scrollToOpenMrs = () => {
     openMRSRef.current.scrollIntoView({ behavior:'smooth' })
   }
@@ -70,14 +69,11 @@ const About = ({openMRSRef,openAIRef,googleRef}) => {
               </ul>
             </div>
           </div>
-        
-        
         </div>
       </div>
-
     </main>
     
   )
 }
 
-export default About
+export default Experience

@@ -117,6 +117,7 @@ header .hamburger-menu.show .hamburger-nav {
 
 main {
   color: #b3b3b3;
+  min-height: calc(100vh - 50px);
 }
 main .container {
   max-width: 960px;
@@ -240,6 +241,13 @@ main .container .contact {
 }
 main .container .contact h3 {
   font-weight: 900;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.15rem;
+  padding: 5px;
+  margin: 10px auto;
 }
 
 @media screen and (max-width: 768px) {

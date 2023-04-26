@@ -4,7 +4,6 @@
     header {
         font-family: config.$minorFont;
         font-size: 18px;
-        
         .header-container {
             margin: 0 10px 0 10px;
             padding: 10px;
@@ -25,13 +24,11 @@
                 ul {
                     display: flex;
                     list-style-type: none;
-                    
                     li {
                         :hover {
                             color:aqua;
                         }
                         margin-right: 60px;
-                        
                         a {
                             text-decoration: none;
                             color: darken(config.$primaryColor,0%);
@@ -100,7 +97,7 @@
             }
         }
 
-        // on clicking hamburger icon
+        // on clicking hamburger-menu icon
         .hamburger-menu.show {
             .menu-icon {
                 .btn-line {
