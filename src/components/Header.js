@@ -16,9 +16,11 @@ const Header = () => {
             <li><Link to='/work'>My Work</Link></li>
             <li><Link to='/contact'>Contact Me</Link></li>
           </ul>
+          
         </nav>
         <HamburgerMenu />
       </div>
+     
     </header>
   )
 }

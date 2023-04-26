@@ -14,7 +14,7 @@ const About = ({openMRSRef,openAIRef,googleRef}) => {
     <main>
       <div className='container'>
         <div className="introduction">
-          <h1 class='about-heading'>Experiences</h1>
+          <h1 className='about-heading'>Experiences</h1>
           <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat, eos exercitationem rerum dignissimos totam obcaecati veritatis. Atque incidunt distinctio nesciunt totam exercitationem quisquam? Provident omnis magnam odio harum blanditiis?
           </p>
@@ -28,7 +28,7 @@ const About = ({openMRSRef,openAIRef,googleRef}) => {
             <button onClick={scrollToOpenAI}>OpenAI</button>
           </div>
           <div id='job-details'>
-            <div class='job' ref={openMRSRef} id="openMRS">
+            <div className='job' ref={openMRSRef} id="openMRS">
               <h3>OpenMRS</h3>
               <h4>Postion: Front End Developer(June 2023 - December 2025)</h4>
               
@@ -42,7 +42,7 @@ const About = ({openMRSRef,openAIRef,googleRef}) => {
                 </li>
               </ul>
             </div>
-            <div class='job' ref={googleRef} id="google">
+            <div className='job' ref={googleRef} id="google">
               <h3>Google</h3>
               <h4>FullStack Developer(January 2026 - November 2028)</h4>
               <h5>Key Roles and Responsibilities</h5>
@@ -56,7 +56,7 @@ const About = ({openMRSRef,openAIRef,googleRef}) => {
               </ul>
 
             </div>
-            <div class='job' ref={openAIRef} id="openAI">
+            <div className='job' ref={openAIRef} id="openAI">
               <h3>OpenAI</h3>
               <h4>Machine Learning Consultant(February 2029 - Marchecember 2035)</h4>
               <h5>Key Roles and Responsibilities</h5>
