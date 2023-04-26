@@ -37,7 +37,7 @@ header nav.normal-nav ul {
   list-style-type: none;
 }
 header nav.normal-nav ul li {
-  margin-right: 20px;
+  margin-right: 60px;
 }
 header nav.normal-nav ul li :hover {
   color: aqua;
@@ -241,7 +241,7 @@ main .container .contact h3 {
   font-weight: 900;
 }
 
-@media screen and (max-width: 501px) {
+@media screen and (max-width: 768px) {
   main .container .title span {
     display: block;
     margin-top: 30px;
@@ -252,8 +252,6 @@ main .container .contact h3 {
   header .hamburger-menu .menu-icon {
     visibility: visible;
   }
-}
-@media screen and (max-width: 768px) {
   .projects {
     flex-direction: column;
   }

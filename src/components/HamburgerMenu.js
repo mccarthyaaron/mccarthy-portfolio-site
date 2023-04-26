@@ -9,9 +9,16 @@ const HamburgerMenu = () => {
         setShowMenu(!showMenu);
     }
     const removeMenu = (e) => {
-        // e.preventDefault();
         setShowMenu(!showMenu);
     }
+
+    // if screen size gets past a certain width, change state of showMenu to false
+    const closeMenu = () => {
+        if(window.innerWidth > 768) {
+            setShowMenu(false);
+        }
+    }
+    window.addEventListener('resize', closeMenu );
 
   return (
    <div className={`hamburger-menu ${showMenu ? 'show' : 'false'}`}>

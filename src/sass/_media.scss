@@ -2,6 +2,12 @@
 
 @mixin mediaSm {
     @media screen and (max-width: 501px) {
+        
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
         main {
             .container {
                 .title {
@@ -15,22 +21,13 @@
         header {
             .normal-nav {
                 display: none;
-                // visibility: hidden;
             }
             .hamburger-menu {
                 .menu-icon {
                     visibility: visible;
                 }
-    
             }
-
         }
-        
-    }
-}
-
-@mixin mediaMd {
-    @media screen and (max-width: 768px) {
         .projects {
             flex-direction: column;
         }
@@ -66,7 +63,6 @@
 
 @mixin mediaXl {
     @media screen and (min-width: 1171px) {
-        
-        
+
     }
 }
