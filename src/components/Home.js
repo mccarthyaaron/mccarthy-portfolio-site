@@ -1,7 +1,7 @@
 import {AiFillGithub, AiFillTwitterCircle} from 'react-icons/ai'
 import {Link} from 'react-router-dom';
 
-const Home = ({}) => {
+const Home = () => {
   return (
     <main>
       <div className='container'>
