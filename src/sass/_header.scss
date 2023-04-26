@@ -36,6 +36,7 @@
                             text-decoration: none;
                             color: darken(config.$primaryColor,0%);
                             @include config.easeIn;
+                            font-size: 1.3rem;
                             
                         }
                     }

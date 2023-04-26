@@ -46,6 +46,7 @@ header nav.normal-nav ul li a {
   text-decoration: none;
   color: white;
   transition: all 0.5s ease-in;
+  font-size: 1.3rem;
 }
 header .hamburger-menu .menu-icon {
   visibility: hidden;
