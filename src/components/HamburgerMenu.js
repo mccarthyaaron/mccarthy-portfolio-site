@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 
 const HamburgerMenu = () => {
     const [showMenu, setShowMenu] = useState(false);
