@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mccarthy-portfolio-site/static/css/main.e2be0149.css",
+    "main.js": "/mccarthy-portfolio-site/static/js/main.07b079da.js",
+    "static/js/787.672efead.chunk.js": "/mccarthy-portfolio-site/static/js/787.672efead.chunk.js",
+    "static/media/project.png": "/mccarthy-portfolio-site/static/media/project.e01f084092154b3a1172.png",
+    "index.html": "/mccarthy-portfolio-site/index.html",
+    "main.e2be0149.css.map": "/mccarthy-portfolio-site/static/css/main.e2be0149.css.map",
+    "main.07b079da.js.map": "/mccarthy-portfolio-site/static/js/main.07b079da.js.map",
+    "787.672efead.chunk.js.map": "/mccarthy-portfolio-site/static/js/787.672efead.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2be0149.css",
+    "static/js/main.07b079da.js"
+  ]
+}
