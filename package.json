@@ -26,7 +26,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sass": "sass --watch src/sass:src/css",
-    "serve": "cd build && npx serve -s -l 4000"
+    "serve": "cd build && npx serve -s -l 4000",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
