@@ -17,6 +17,7 @@ function App() {
     <Header />
 
     <Routes>
+      <Route path='/mccarthy-portfolio-site' element={<Home />}></Route>
       <Route path='/' element={<Home />}></Route>
       <Route path='/experience' element={<Experience openAIRef={openAIRef} openMRSRef={openMRSRef} googleRef={googleRef}/>}></Route>
       <Route path='/contact' element={<Contact />}></Route>
