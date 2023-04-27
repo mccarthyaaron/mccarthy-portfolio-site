@@ -1,6 +1,6 @@
 {
-  "homepage": "http://mccarthyaaron.github.io/portfolio-site",
-  "name": "portfolio-site",
+  "homepage": "https://mccarthyaaron.github.io/mccarthy-portfolio",
+  "name": "portfolio-site-dev-build",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
